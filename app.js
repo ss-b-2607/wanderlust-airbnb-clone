@@ -41,8 +41,8 @@ const validateListing = (req,res,next)=>{
         next();
     
 };
-app.get("/",(req,res)=>{
-    res.send("Home Page");
+app.get("/", (req, res) => {
+    res.redirect("/listings");
 });
 // INDEX ROUTE 
 app.get("/listings", wrapAsync(async (req,res)=>{
