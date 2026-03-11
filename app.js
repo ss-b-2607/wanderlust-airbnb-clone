@@ -8,10 +8,11 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const wrapAsync = require("./utils/wrapAsync.js");
 const ExpressError = require("./utils/ExpressError.js");
-const {listingSchema}=require("./schema.js");
+const schema = require("./schema.js");
+const listingSchema = schema.listingSchema;
 
 
-const url = process.env.MONGO_URL;
+const url = process.env.MONGO_URL || "mongodb+srv://wanderlustUser:Sheetal-123@cluster0.ofhln7x.mongodb.net/wanderlust";
 
 async function main(){
     await mongoose.connect(url);
