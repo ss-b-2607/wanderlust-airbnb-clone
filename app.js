@@ -10,8 +10,8 @@ const wrapAsync = require("./utils/wrapAsync.js");
 const ExpressError = require("./utils/ExpressError.js");
 const {listingSchema}=require("./schema.js");
 
-let url = "mongodb://127.0.0.1:27017/wanderlust";
 
+const url = process.env.MONGO_URL;
 
 async function main(){
     await mongoose.connect(url);
