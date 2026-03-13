@@ -15,3 +15,6 @@ A full-stack Airbnb-style listing website built using Node.js, Express, MongoDB,
 - MongoDB
 - EJS
 - Bootstrap
+
+<<update>>
+airbnb style categories added (usiing filters to filterout)
